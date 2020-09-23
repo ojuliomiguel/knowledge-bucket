@@ -1,5 +1,5 @@
-# SOLID com TypeScript
+# Documentando uma parte do meu aprendizado
 
-Esta foi uma live class do canal [Rodrigo Branas](https://www.youtube.com/watch?v=899Qa6sQcRc) no qual ele ensinou os 5 princípios do SOLID com o superset TypeScript. 
+Este repositório contém uma parte do que estou e ando aprendendo no que refere-se a desenvolvimento de software.
+Sinta-se a vontade em explorar este repositório!
 
-:notebook: Anotações em breve... 
