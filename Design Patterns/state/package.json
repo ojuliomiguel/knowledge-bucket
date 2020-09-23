@@ -1,0 +1,14 @@
+{
+  "name": "state",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./main.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0"
+  }
+}
