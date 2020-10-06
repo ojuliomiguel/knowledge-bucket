@@ -1,0 +1,15 @@
+{
+  "name": "observer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only app.ts"
+  },
+  "dependencies": {
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.63"
+  }
+}
