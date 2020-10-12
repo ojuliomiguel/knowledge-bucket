@@ -2,4 +2,7 @@
 
 ## Conteúdos
 
-  * State Pattern (TypeScript)
+  * 1. [State](state) :file_folder:
+  * 2. [Observer](observer) :file_folder:
+  * 3. [strategy](strategy) :file_folder:
+
