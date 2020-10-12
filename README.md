@@ -3,6 +3,12 @@
 Este repositório contém uma parte do que estou e ando aprendendo no que refere-se a desenvolvimento de software.
 Sinta-se a vontade em explorá-lo. 
 
+### Conteúdos:
+* 1. [SOLID com TypeScript](SOLID-TS) :file_folder:
+* 2. [Estruturas de Controle](DesignPatterns) :file_folder:
+
+
+
 ### Me encontre em: 
 
 [Contato](https://linktr.ee/juliomiguel)
