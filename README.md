@@ -6,6 +6,8 @@ Sinta-se a vontade em explorá-lo.
 ### Conteúdos:
 * 1. [SOLID com TypeScript](SOLID-TS) :file_folder:
 * 2. [Padrões de projetos](DesignPatterns) :file_folder:
+* 3. [Computação Paralela](ComputacaoParalela) :file_folder:
+
 
 
 
