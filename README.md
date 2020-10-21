@@ -4,11 +4,9 @@ Este repositório contém uma parte do que estou e ando aprendendo no que refere
 Sinta-se a vontade em explorá-lo. 
 
 ### Conteúdos:
-* 1. [SOLID com TypeScript](SOLID-TS) :file_folder:
-* 2. [Padrões de projetos](DesignPatterns) :file_folder:
-* 3. [Computação Paralela](ComputacaoParalela) :file_folder:
-
-
+* 1 - [SOLID com TypeScript](SOLID-TS) :file_folder:
+* 2 - [Padrões de projetos](DesignPatterns) :file_folder:
+* 3 - [Computação Paralela](ComputacaoParalela) :file_folder:
 
 
 ### Me encontre em: 
