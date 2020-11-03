@@ -20,11 +20,10 @@ class EventChannel {
         this.subscribers[eventName] ? index = this.subscribers[eventName].length - 1  : index;        
     
         return {
-            unsubscribe() { 
-                console.log(this.subscribers);
-                   
-                if(this.subscribers[eventName]) 
-                    this.subscribe[eventName].splice(index, 1);
+             unsubscribe: () => {  
+                if(this.subscribers[eventName])
+                  
+                    this.subscribers[eventName].splice(index, 1);
             }
         }
     }
