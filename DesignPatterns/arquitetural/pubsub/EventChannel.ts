@@ -21,8 +21,10 @@ class EventChannel {
     
         return {
              unsubscribe: () => {  
+                
+                 
                 if(this.subscribers[eventName])
-                  
+
                     this.subscribers[eventName].splice(index, 1);
             }
         }
