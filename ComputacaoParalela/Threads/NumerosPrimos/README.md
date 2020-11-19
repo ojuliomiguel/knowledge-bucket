@@ -40,6 +40,7 @@ public static void main(String[] args) throws Exception {
 ### Versão usando 10 threads
 
 [Codigo fonte aqui](src/PrimeNumberThread.java)
+[Codigo Principal App.java](src/App.java)
 
 ```console
 my@user:~$ Tempo 323 ms
