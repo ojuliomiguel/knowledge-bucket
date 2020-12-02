@@ -24,7 +24,7 @@ class ClientThread(Thread):
 			"""loop para receber dados do servidor"""
 			data = tcpClientA.recv(BUFFER_SIZE)
 			data  = data.decode()
-			print(data)
+			print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + data)
 			aux = json.loads(data)
 			print(aux)
 			if aux["operacao"] == "lista":
@@ -134,7 +134,7 @@ class PrincipalJanela(QMainWindow):
 			tcpClientA.send(x.encode())
 
 if __name__ == '__main__':
-	clientThread=ClientThread()
+	clientThread = ClientThread()
 	clientThread.start()
 	app = QApplication(sys.argv)
 	frame = PrincipalJanela()
