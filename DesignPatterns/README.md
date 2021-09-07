@@ -5,6 +5,8 @@
   * 1 - [State](state) :file_folder:
   * 2 - [Observer](observer) :file_folder:
   * 3 - [strategy](strategy) :file_folder:
+  * 4 - [Dependecy Injection](DI) :file_folder:
+
 
   ### Padrões arquiteturais
 
