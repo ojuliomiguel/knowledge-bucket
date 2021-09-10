@@ -1,0 +1,19 @@
+{
+  "name": "ts-ioc",
+  "version": "1.0.0",
+  "description": "implementaçao do IoC baseado no typescript",
+  "main": "index.js",
+  "author": "J",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only ./src/App.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
