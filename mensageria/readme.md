@@ -23,5 +23,16 @@ Para cada tópico o kafka irá criar partições. Essa distribuição dos dados 
 
 <p align="center">
     <img align="center" alt="GIF" src="https://kafka.apache.org/images/streams-and-tables-p1_p4.png" width="500" height="290" />
-    <h5 align="center"> Descrição:  </h5>
+    <h5 align="center"> 
+    Descrição: Na imagem notamos 4 tópicos. Dois producers estão publicando mensagens independente um do do outro. 
+    </h5>
 </p>
+
+### Fluxos de mensagem
+Cada mensagem produzida por um producer precisa ser commitada (cada offset) no consumer para saber quais mensagens já foram processadas
+
+<p align="center">
+    <img align="center" alt="GIF" src="https://newrelic.com/sites/default/files/wp_blog_inline_files/offset_explained2-1024x383.jpg" height="250" width="600"  />
+</p>
+
+# Arquitetura
