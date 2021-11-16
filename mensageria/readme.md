@@ -30,7 +30,7 @@ Um stream de eventos representa eventos relacionados em movimento.
 
 ### Partições
 
-Para cada tópico o kafka irá criar partições. Essa distribuição dos dados é importate pela questão da **escalibilidade**, permitindo assim que várias aplicações clientes leiam e escrevam dados respectivamente de vários **brokers** ao mesmo tempo
+Para cada tópico o kafka irá criar partições. Essa distribuição das mensagens é importate pela questão da **escalabilidade** no qual permite que várias aplicações clientes leiam e escrevam dados respectivamente de vários **brokers** ao mesmo tempo
 
 <p align="center">
     <img align="center" alt="GIF" src="https://kafka.apache.org/images/streams-and-tables-p1_p4.png" width="500" height="290" />
@@ -39,7 +39,10 @@ Para cada tópico o kafka irá criar partições. Essa distribuição dos dados 
     </h5>
 </p>
 
-### Atribuições das  nas partições
+### Atribuições de mensagem nas partições
+
+Uma mensagem quarda em um tópico no kafka segue a seguinte estrutura:
+
 
 ### Fluxos de mensagem
 Cada mensagem produzida por um producer precisa ser commitada (cada offset) no consumer para saber quais mensagens já foram processadas
@@ -48,4 +51,8 @@ Cada mensagem produzida por um producer precisa ser commitada (cada offset) no c
     <img align="center" alt="GIF" src="https://newrelic.com/sites/default/files/wp_blog_inline_files/offset_explained2-1024x383.jpg" height="250" width="600"  />
 </p>
 
-# Arquitetura
+### Materiais
+
+[Kafka The Definitive Guide](https://bit.ly/3ox2tn2)
+
+[Effective Kafka](https://bit.ly/3DneBNj)
