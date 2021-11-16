@@ -2,7 +2,7 @@
 
 ## Apache Kafka
 
-> Palavras-chaves: **produtores**, **consumidores**, **tópicos**, **partições**, **offsets**
+> Palavras-chaves: **produtores**, **consumidores**, **tópicos**, **partições**, **offsets**, **eventos**
 
 É uma plataforma para processamento distribuído de eventos.
 Usos comuns do kafka:
@@ -10,11 +10,21 @@ Usos comuns do kafka:
  * mensageria
  * desacoplamento na comunicação entre sistemas
 
+## Definições 
+
+####  Eventos
+
+Representa um fato que ocorreu no passado. Eventos são imutáveis e nunca permanece em um único 
+####  Streams 
+
+Um stream de eventos representa eventos relacionados em movimento. 
+
  ### Tópicos
 
  Os tópicos são recursos utilizados para que as mensagens produzidas possam ser consumidas por interessados. Uma maneira simples de se pensar em um tópico é seguir uma hashtag no instagram. Se você tem interesse em gatos, por exemplo, ao seguir #gatos você está - por assim dizer - inscrevendo-se em um tópico na qual toda publicação para o mesmo notificará os interessados (consumidores).
  
- #### Produtos e consumidores
+ ### Produtores e consumidores
+
  De maneira técnica, os tópicos representam fluxos de eventos que desacomplam a comunicação entre sistemas, pois produtores e consumidores não precisam se conhecer, basta apenas ter um canal de comunicação que neste caso chamamos de tópico.
 
 ### Partições
@@ -27,6 +37,8 @@ Para cada tópico o kafka irá criar partições. Essa distribuição dos dados 
     Descrição: Na imagem notamos 4 tópicos. Dois producers estão publicando mensagens independente um do do outro. 
     </h5>
 </p>
+
+### Atribuições das  nas partições
 
 ### Fluxos de mensagem
 Cada mensagem produzida por um producer precisa ser commitada (cada offset) no consumer para saber quais mensagens já foram processadas
