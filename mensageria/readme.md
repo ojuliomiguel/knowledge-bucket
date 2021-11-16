@@ -12,10 +12,11 @@ Usos comuns do kafka:
 
 ## Definições 
 
-####  Eventos
+###  Eventos
 
-Representa um fato que ocorreu no passado. Eventos são imutáveis e nunca permanece em um único 
-####  Streams 
+Representa um fato que ocorreu no passado. Eventos são imutáveis e nunca permanece em um único lugar.
+
+###  Streams 
 
 Um stream de eventos representa eventos relacionados em movimento. 
 
