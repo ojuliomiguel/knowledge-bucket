@@ -1,14 +1,17 @@
-/* 
-  Generator Function returns a Generator Object
-  instance Methods:
-  Generator.prototype.next() ex: { value: 0, done: false }
-  Generator.prototype.return()
-  Generator.prototype.throw()
-  --- 
-  Use cases:
-  inifity loop withou lock main stack
-*/
-
+/**
+ * Generator Function returns a Generator Object
+ * instance Methods:
+ * Generator.prototype.next() ex: { value: 0, done: false }
+ * Generator.prototype.throw()
+ * Generator.prototype.return()
+ * --- 
+ *  Use cases:
+ * inifity loop withou lock main stack
+ * ---
+ * The 'yield' keyworkd:
+ * Its works like a break whenever 'yield is encountered
+ */
+  
 function* generator(i) {
   yield i;
   yield i + 10;
