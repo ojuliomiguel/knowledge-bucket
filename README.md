@@ -8,6 +8,8 @@ Sinta-se a vontade em explorá-lo.
 * 2 - [Padrões de projetos](DesignPatterns) :file_folder:
 * 3 - [Computação Paralela](ComputacaoParalela) :file_folder:
 * 4 - [Mensageria](mensageria) :file_folder:
+* 4 - [Refactoring](refactoring) :file_folder:
+
 
 
 ### Me encontre em: 
