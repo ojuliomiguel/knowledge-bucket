@@ -9,6 +9,8 @@ Sinta-se a vontade em explorá-lo.
 * 3 - [Computação Paralela](ComputacaoParalela) :file_folder:
 * 4 - [Mensageria](mensageria) :file_folder:
 * 4 - [Refactoring](refactoring) :file_folder:
+* 5 - [Refactoring](Algoritmos/) :file_folder:
+
 
 
 
