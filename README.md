@@ -10,6 +10,8 @@ Sinta-se a vontade em explorá-lo.
 * 4 - [Mensageria](mensageria) :file_folder:
 * 4 - [Refactoring](refactoring) :file_folder:
 * 5 - [Algoritmos](Algoritmos/) :file_folder:
+* 5 - [Estruturas de dados](ds/) :file_folder:
+
 
 
 ### Me encontre em: 
