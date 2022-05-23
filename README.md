@@ -13,7 +13,6 @@ Sinta-se a vontade em explorá-lo.
 * 5 - [Estruturas de dados](ds/) :file_folder:
 
 
-
 ### Me encontre em: 
 
 [Contato](https://linktr.ee/juliomiguel)
