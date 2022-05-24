@@ -11,4 +11,4 @@ const elements = [1, 2, 3, 4, 5];
 */
 elements.splice(3, 0, 7,8,9);
 
-console.log(elements);
+console.log(elements); // [1, 2, 3, 7, 8, 9, 4, 5]
