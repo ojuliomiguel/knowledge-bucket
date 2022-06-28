@@ -7,7 +7,7 @@ Sinta-se a vontade em explorá-lo.
 * 1 - [SOLID com TypeScript](SOLID-TS) :file_folder:
 * 2 - [Padrões de projetos](DesignPatterns) :file_folder:
 * 3 - [Computação Paralela](ComputacaoParalela) :file_folder:
-* 4 - [Mensageria](mensageria) :file_folder:
+* 4 - [Message Brokers](mensageria) :file_folder:
 * 4 - [Refactoring](refactoring) :file_folder:
 * 5 - [Algoritmos](Algoritmos/) :file_folder:
 * 5 - [Estruturas de dados](ds/) :file_folder:
