@@ -12,7 +12,7 @@ ps: Most of theoretical content is in portuguese. I will update to english soon
 * 4 - [Message Brokers](mensageria) :file_folder:
 * 4 - [Refactoring](refactoring) :file_folder:
 * 5 - [Algorithms](Algoritmos/) :file_folder:
-* 5 - [Data Structure](ds/) :file_folder:
+* 5 - [Data Structure](DataStructure/) :file_folder:
 
 ### You can find me at: 
 
