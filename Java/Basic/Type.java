@@ -23,6 +23,9 @@ public class Type {
      */
     
     int amountOfMoney = 10;
+    double piNumber = 3.14;
+    float piNumberFloat = 3.14f;
+    long longNumber = 77777777777777777L;
     
   }
 }
