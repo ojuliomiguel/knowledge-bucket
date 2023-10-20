@@ -1,4 +1,4 @@
-package Java.Basic.OPP;
+package Java.Basic.OPP.People;
 
 public class People {
   String name;
