@@ -1,4 +1,4 @@
-package Java.Basic;
+package Java.Basic.FirstSteps;
 
 import java.util.List;
 import java.util.ArrayList;

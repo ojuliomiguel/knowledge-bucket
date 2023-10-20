@@ -1,4 +1,4 @@
-package Java.Basic;
+package Java.Basic.FirstSteps;
 
 import java.util.HashSet;
 import java.util.Set;

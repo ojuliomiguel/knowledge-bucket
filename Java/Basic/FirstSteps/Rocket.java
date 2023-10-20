@@ -1,4 +1,4 @@
-package Java.Basic;
+package Java.Basic.FirstSteps;
 
 public class Rocket {
 
