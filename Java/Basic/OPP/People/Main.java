@@ -21,6 +21,7 @@ public class Main {
     student.setName("Lisa Hopcroft");
     student.setAge(35);
     student.setCpf("111111111-11");
+    student.setRegistration(145656);
 
     System.out.println(student.printInformations() + "\n");
   }
