@@ -2,11 +2,13 @@ package br.com.solidcode42.solidcode;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "br.com.solidcode42")
 @RestController
 public class SolidcodeApplication {
 

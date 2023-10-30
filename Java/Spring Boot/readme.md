@@ -40,3 +40,10 @@ Advantages:
 
 The `@SpringBootApplication` annotation triggers the automatic scanning of the 
 classpath, detects the configurations, and sets up the application accordingly.
+
+### @ComponentScan
+
+This annotation tells de Spring container where to look for beans or components
+to be auto-wired into the application context, By default, Spring Boot's auto-configuration
+scans for components in the current package where de `@SpringBootApplication` is located and its
+sub-packages.
