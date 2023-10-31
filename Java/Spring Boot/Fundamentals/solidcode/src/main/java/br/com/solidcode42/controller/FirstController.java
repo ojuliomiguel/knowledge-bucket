@@ -1,7 +1,10 @@
 package br.com.solidcode42.controller;
 
+import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,11 +40,16 @@ public class FirstController {
   }
 
   @PostMapping("/infos")
-  public String receiveInfos(
-    @RequestBody InfoDto body,
-    @RequestHeader Map<String, String> headers
-    ) {
-    return "Information sent %s %s. \n headers: %s".formatted(body.name(), body.age(), headers.entrySet());
+  public ResponseEntity<Object> receiveInfos(
+      @RequestBody InfoDto body,
+      @RequestHeader Map<String, String> headers
+  ) {
+    Map<String, Object> response = new HashMap<>();
+    response.put("name", body.name());
+    response.put("age", body.age());
+    response.put("headers", headers);
+    
+    return ResponseEntity.status(HttpStatus.ACCEPTED).body(response);
   }
 
 }
