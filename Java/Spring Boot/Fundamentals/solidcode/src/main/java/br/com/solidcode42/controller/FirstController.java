@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,8 +37,11 @@ public class FirstController {
   }
 
   @PostMapping("/infos")
-  public String receiveInfos(@RequestBody InfoDto body) {
-    return "Information sent %s %s".formatted(body.name(), body.age());
+  public String receiveInfos(
+    @RequestBody InfoDto body,
+    @RequestHeader Map<String, String> headers
+    ) {
+    return "Information sent %s %s. \n headers: %s".formatted(body.name(), body.age(), headers.entrySet());
   }
 
 }
