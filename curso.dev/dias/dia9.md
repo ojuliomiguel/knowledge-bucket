@@ -16,4 +16,4 @@ E no nível quatro, a intenção é gerar métricas que avaliem o progresso e o 
 
 ---
 
-- [Anterior](/curso.dev/dias/dia8.md) - [Próximo](/curso.dev/dias/dia10.md) - [Sumário](../README.md)
+- [Anterior](/curso.dev/dias/dia8.md) - [Próximo](/curso.dev/dias/dia10.md) - [Sumário](../readme.md)
