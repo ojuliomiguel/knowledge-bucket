@@ -10,7 +10,10 @@ A imagem abaixo reflete caminhos para desenvolver algo: forma orgânica e impres
 
 ## Dia 9
 
-Na aula do dia nove, abordou-se o tema de projetos e a sua gestão, enfatizando a importância de abstrair os níveis de desenvolvimento das atividades. Explicou-se, por exemplo, a necessidade de reduzir o escopo das atuações, procurando fazer mais com menos, ao invés de fazer menos com mais.
+Na aula do dia nove, abordou-se o tema de projetos e a sua gestão, enfatizando a importância de expandir e quebrar os níveis de desenvolvimento das atividades. Explicou-se, por exemplo, a necessidade de reduzir o escopo das atuações, procurando fazer mais com menos, ao invés de fazer menos com mais.
+Para realização de fazer mais com menos devemos quebrar nosso projeto (a grande pedra) em pequenas partes. Às vezes não sabemos como irão sair as rachaduras das quebras do projeto em partes menores - mas dessa forma garantimos um desenvolvimento orgânico e com ajustes possíveis ao longo do tempo.
+As milestones (ou marcos) são uma forma de representar essas divisões e para cada milestone teremos as issues associadas a ela que representarão as atividades. 
+A importância de sair dos extremos para fazer qualquer coisa - o tudo ou nada - nos permite avançar em pequenas atividades que comporão o projeto em seu estado final.
 
 Foram identificados quatro níveis de tarefas:
 
