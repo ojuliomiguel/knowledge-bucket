@@ -13,5 +13,11 @@ foi no antigo emprego dele na pagar.me onde o projeto estava tomando grandes pro
 decidiu aplicar no projeto por inteiro (que perigo!) - até os testes (graças a Deus que tinha testes) foram
 alterados - mas tudo deu certo.
 
+## Sync das configurações do VSCode do github (Codespaces)
+
+Como o é um ambiente ênfemero foi aproveitei a aula para ativar a sincronização 
+das configurações em um novo perfil diferente o que já uso. Assim, toda vez que 
+precisar criar um novo codespaces - as configs serão sincronizadas.
+
 --- 
 - [Anterior](/curso.dev/dias/dia9.md) - [Próximo](/curso.dev/dias/dia11.md) - [Sumário](../readme.md)
