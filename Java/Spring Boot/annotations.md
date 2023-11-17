@@ -25,3 +25,8 @@ sub-packages.
 
 Its allows you to handle exceptions across the whole application, not just to an individual controller. 
 Its like an interceptor of exceptions thrown by methods annotated with `@RequestMapping` and similar.
+
+## Bean
+
+The `@Bean` annotation is an object managed by Spring container. @Bean is usually declared in Java 
+class annotated with `@Configuration`.
