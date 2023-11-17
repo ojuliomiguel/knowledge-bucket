@@ -25,6 +25,11 @@ $ mvn clean install
 $ java -jar target/project-name-0.0.1-SNAPSHOT.jar
 ```
 
-## [Spring Boot Annotations](./annotations.md)
+## Summary
 
-## [Application Config](./application.properties.md)
+1.  [Spring Boot Annotations](./annotations.md)
+
+2. [Application Config](./application.properties.md)
+
+3. [Spring Security](./spring-security.md)
+
