@@ -19,5 +19,23 @@ Como o é um ambiente ênfemero foi aproveitei a aula para ativar a sincronizaç
 das configurações em um novo perfil diferente o que já uso. Assim, toda vez que 
 precisar criar um novo codespaces - as configs serão sincronizadas.
 
+## Definindo configurações do editor
+
+Na segunda aula do dia 10 foi realizado a criação do arquivo `.editorconfig` para assim padronizar
+a escrita de código.
+O VSCode por padrão não é capaz de ler este arquivo, portanto é necessário instalar a extensão relacionada ao editor.
+
+O arquivo inicialmente ficou:
+
+```
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+```
+
+A aula de hoje conclui a segunda tarefa da issue [Definir estilização do código e configurar editor](https://github.com/ojuliomiguel/tap-to-news/issues/2)
+
 --- 
 - [Anterior](/curso.dev/dias/dia9.md) - [Próximo](/curso.dev/dias/dia11.md) - [Sumário](../readme.md)
