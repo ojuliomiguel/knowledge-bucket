@@ -15,13 +15,13 @@ alterados - mas tudo deu certo.
 
 ## Sync das configurações do VSCode do github (Codespaces)
 
-Como o é um ambiente ênfemero foi aproveitei a aula para ativar a sincronização 
+Como o é um ambiente ênfemero aproveitei a aula para ativar a sincronização 
 das configurações em um novo perfil diferente o que já uso. Assim, toda vez que 
 precisar criar um novo codespaces - as configs serão sincronizadas.
 
 ## Definindo configurações do editor
 
-Na segunda aula do dia 10 foi realizado a criação do arquivo `.editorconfig` para assim padronizar
+Na terceira aula do dia 10 foi realizado a criação do arquivo `.editorconfig` para assim padronizar
 a escrita de código.
 O VSCode por padrão não é capaz de ler este arquivo, portanto é necessário instalar a extensão relacionada ao editor.
 
@@ -36,6 +36,33 @@ indent_size = 2
 ```
 
 A aula de hoje conclui a segunda tarefa da issue [Definir estilização do código e configurar editor](https://github.com/ojuliomiguel/tap-to-news/issues/2)
+
+## Configurar o Prettier
+
+Na última aula deste dia, configuramos o [Prettier](https://prettier.io/) para o projeto
+visando que tenha-se uma padronização de código e qualidade durante o desenvolvimento. 
+
+```json
+"lint:check": "prettier --check .",
+"lint:fix": "prettier --write ."
+```
+
+Os comandos listados acima foram adicionados ao `package.json` do projeto na seção
+`scripts`.
+* `lint:check:` faz uma varredura para identificar quais arquivos estão fora do padrão de estilização
+* `lint:fix`: realiza as correções identificadas na varredura.
+
+### `.prettierignore`
+
+Alguns alunos identificam que o `lint:check:` estava varrendo a pasta .next. No caso do 
+Filipe e o meu também não estava acontecendo porque recriamos o ambiente no codespace. Dessa forma a pasta
+.next não existia. Mas o problema pode ser resolvido facilmente adicionando ao projeto:
+
+`.prettierignore`
+
+```
+.next
+```
 
 --- 
 - [Anterior](/curso.dev/dias/dia9.md) - [Próximo](/curso.dev/dias/dia11.md) - [Sumário](../readme.md)
