@@ -2,7 +2,6 @@
 
 <img src="https://i.ibb.co/42vfMqF/knowledge-bucket.png" width="700">
 
-
 This repository contains some notes and codes of my journey learning. 
 Feel free to explore it.
 
