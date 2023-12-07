@@ -43,8 +43,8 @@ solicitando.
 
 ### Recursos:
 
-[How DNS Works](https://howdns.works/pt-br/ep1/)
+- [How DNS Works](https://howdns.works/pt-br/ep1/)
 
-[mdn - What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name)
+- [mdn - What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name)
 --- 
 - [Anterior](/curso.dev/dias/dia10.md) - [Próximo](/curso.dev/dias/dia12.md) - [Sumário](../readme.md)
