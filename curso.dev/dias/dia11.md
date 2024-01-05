@@ -1,6 +1,6 @@
 # Dia 11
 
-## DSN - Domain Name System.
+## DNS - Domain Name System.
 
 Na primeira aula do dia 11 foi abordado a respeito da dinâmica do funcionamento dos websites.
 Todo e qualquer site, por exemplo: `www.google.com` não é pelo endereço (textual) que nosso computador consegue se comunicar,
@@ -17,14 +17,14 @@ aula escondida - desafio foi extremamente simples mas a lição e o ouro desta a
 
 > Você não pode ter medo de quebrar as coisas que você está construíndo!
 
-## Resolução de DSN (Desafio 2)
+## Resolução de DNS (Desafio 2)
 
 Quando vamos acessar um site, como o `www.tabnews.com.br` o SO faz uma requsição pela rede para o meu provedor de internet que possui um negócio chamado
 Recursive Resolver. Que, como próprio nome sugere, vai de forma recursiva buscar pelo enderenço ip para que assim nossa máquina
 consiga acessar o site.
 Todo site termina com um ponto - Fully Qualified Domain Name - então na verdade o site do tabnews ou qualquer outro, por exemplo
 ficaria assim: `www.tabnews.com.br.`. O ponto no final do site representa o Root Server, onde ele irá identificar o .br que é o TLD ()
-Top-Level Domain para que assim ele localize dessa vez o ip do site através do Authoritative Server onde há os registros de DSN.
+Top-Level Domain para que assim ele localize dessa vez o ip do site através do Authoritative Server onde há os registros de DNS.
 O servidor TLD .br consegue apontar para os authoritative name servers por conta dos registradores de domínio. Quando o domínio é comprado o registrador reserva o nome e comunica ao TLD quais são os 
 authoritative name servers.
 

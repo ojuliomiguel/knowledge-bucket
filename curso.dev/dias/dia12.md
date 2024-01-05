@@ -43,7 +43,7 @@ autoritativo - que neste caso seria a vercel para que assim o site/domínio apon
 ### "Chorinho" sobre Servidor de DNS
 
 Nesta aula adicional, foi explicado o uso da ferramenta de linha de comando chamada `dig`. O dig (Domain Information Groper) é uma 
-ferramenta para consultar informações de DNS e diagnosticar problemas relacionados ao DSN.
+ferramenta para consultar informações de DNS e diagnosticar problemas relacionados ao DNS.
 
 ```bash
 dig curso.dev +trace
@@ -93,4 +93,4 @@ dig curso.dev A
 ```
 Irá retornar alguns IPS (GeoDNS - ip mais próximo de quem está requisitando.)  
 --- 
-- [Anterior](/curso.dev/dias/dia11.md) - [Próximo](/curso.dev/dias/dia12.md) - [Sumário](../readme.md)
+- [Anterior](/curso.dev/dias/dia11.md) - [Próximo](/curso.dev/dias/dia13.md) - [Sumário](../readme.md)
