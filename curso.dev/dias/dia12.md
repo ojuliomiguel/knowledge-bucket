@@ -1,6 +1,6 @@
-# Dia 12
+# Dia 12 - Registro de Domínio e DNS Config
 
-- [Dia 12](#dia-12)
+- [Dia 12 - Registro de Domínio e DNS Config](#dia-12---registro-de-domínio-e-dns-config)
   - [Pista Rápida](#pista-rápida)
     - [Insight](#insight)
     - [Registrar um Domínio Próprio](#registrar-um-domínio-próprio)
@@ -50,6 +50,9 @@ dig curso.dev +trace
 ```
 O comando acima irá mostrar todo processo de resolução de DNS para o domínio `curso.dev`:
 
+<details>
+<summary>Click para ver o resultado</summary>
+
 1. Consulta aos Roots servers
 
 ```bash
@@ -84,6 +87,9 @@ curso.dev. 300 IN A 104.26.13.195
 curso.dev. 300 IN A 172.67.74.250
 curso.dev. 300 IN A 104.26.12.195
 ```
+</details>
+
+
 Por fim, os servidores da Cloudflare fornecem os registros de endereço IP (A records) para `curso.dev`.
 
 O dig também é capaz de buscar DNS Records. Exemplo:
