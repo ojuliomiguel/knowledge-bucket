@@ -9,5 +9,7 @@ Anotações das aulas do [curso.dev](https://curso.dev/).
 10. [Estilo de código](/curso.dev/dias/dia10.md)
 11. [DNS - Fundamentos](/curso.dev/dias/dia11.md)
 12. [DNS - Registro de domínio e configuração de DNS](/curso.dev/dias/dia12.md)
+13. [Não confie em nenhum serviço](/curso.dev/dias/dia13.md)
+14. [Fundação](/curso.dev/dias/dia14.md)
 
 
