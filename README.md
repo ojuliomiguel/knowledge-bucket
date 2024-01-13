@@ -12,9 +12,11 @@ ps: Most of theoretical content is in portuguese. I will update to english soon
 * 2 - [Design Patterns](DesignPatterns) :file_folder:
 * 3 - [Computação Paralela](ComputacaoParalela) :file_folder:
 * 4 - [Message Brokers](mensageria) :file_folder:
-* 4 - [Refactoring](refactoring) :file_folder:
-* 5 - [Algorithms](Algoritmos/) :file_folder:
-* 5 - [Data Structure](DataStructure/) :file_folder:
+* 5 - [Refactoring](refactoring) :file_folder:
+* 6 - [Algorithms](Algoritmos/) :file_folder:
+* 7 - [Data Structure](DataStructure/) :file_folder:
+* 8 - [Studies Notes](curso.dev/) :file_folder:
+
 
 ### You can find me at: 
 
