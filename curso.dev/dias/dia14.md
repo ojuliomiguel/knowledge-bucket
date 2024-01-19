@@ -42,7 +42,12 @@ O Akita tem um manual interessante a respeito de desenvolver software:
 
 Embora a dica do Akita não seja uma prática que leve ao TDD, temos um feedback inicial a respeito do desenvolvimento.
 
+## Proposta de Arquitetura de Pastas
 
+Arquitetura de software != Organização dos arquivos. 
+
+Arquitetura de software trata-se da disposição dos componentes e como eles interagem com o sistema. Diferentemente de arquivos, que podem não ter correlações ou uma boa interação com os componentes. 
+Uma arquitetura de software pode residir em um único arquivo (evidente que não se faz isso) pois o que realmente importa são os componentes e suas relações.
 
 --- 
 - [Anterior](/curso.dev/dias/dia13.md) - [Próximo](/curso.dev/dias/dia15.md) - [Sumário](../readme.md)
