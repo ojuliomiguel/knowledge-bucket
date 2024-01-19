@@ -23,6 +23,27 @@ Link: [Milestone 1](https://github.com/ojuliomiguel/onetab/milestone/2)
 
 ## Overengineering 
 
+Um software deve responder sempre uma pergunta: o quanto é modificável?
+
+![Alt text](/curso.dev/assets/overengineering_graph.png)
+
+Fazer um software robusto, com as melhores práticas da engenharia pode ser um perigo eminente. Podemos nos empolgar inserindo altas engenharias mas sem ter um real motivo para fazê-lo. 
+A ideia central, portanto, consiste em começar simples e ir adicionado “complexidades” quando necessário. 
+Deschamps faz uma analogia interessante que é a do corte de cabelo: se cortar demais - impossível reverter naquele momento. Mas se cortar aos poucos, pode-se contonar ajustando ao modo desejado do cliente. Um software, portanto, deve nascer simples mas preparado para crescer de forma saudável. 
+
+O Akita tem um manual interessante a respeito de desenvolver software:
+
+	•	Fazer Funcionar
+	•	Fazer ficar correto (testes/bugs etc.)
+	•	Fazer ficar legível (refatorar, reorganizar)
+	•	Fazer ficar seguro (sanitização, leaks, etc)
+	•	Fazer ficar escalável (evitar o que puder de coisas bloqueantes, evitar tudo que for global)
+	•	Fazer ficar rápido (escovar bit)
+
+Embora a dica do Akita não seja uma prática que leve ao TDD, temos um feedback inicial a respeito do desenvolvimento.
+
+
+
 --- 
 - [Anterior](/curso.dev/dias/dia13.md) - [Próximo](/curso.dev/dias/dia15.md) - [Sumário](../readme.md)
 
