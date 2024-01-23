@@ -44,10 +44,14 @@ Embora a dica do Akita não seja uma prática que leve ao TDD, temos um feedback
 
 ## Proposta de Arquitetura de Pastas
 
+> Architecture is about the important stuff (domain). Whatever that is. - Ralph Johnson
+
 Arquitetura de software != Organização dos arquivos. 
 
-Arquitetura de software trata-se da disposição dos componentes e como eles interagem com o sistema. Diferentemente de arquivos, que podem não ter correlações ou uma boa interação com os componentes. 
+Arquitetura de software trata-se da disposição dos componentes e como eles interagem com o sistema. Diferentemente de arquivos, que podem não ter correlações semânticas etc.
 Uma arquitetura de software pode residir em um único arquivo (evidente que não se faz isso) pois o que realmente importa são os componentes e suas relações.
+A definição acima, genérica, não define arquitetura em um contexto mais amplo como a frase citada. 
+Uma arquitetura de software pode ser entendida também como um conjunto de decisões importantes para um projeto.
 
 --- 
 - [Anterior](/curso.dev/dias/dia13.md) - [Próximo](/curso.dev/dias/dia15.md) - [Sumário](../readme.md)
