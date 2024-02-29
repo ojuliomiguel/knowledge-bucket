@@ -12,7 +12,7 @@ rl.question('Digite o dia da aula ', (answer) => {
     `# Dia ${day} - 
 
 ---
-- [Anterior](/curso.dev/dias/dia${day - 1}.md) - [Próximo](/curso.dev/dias/dia${day + 1}.md) - [Sumário](../readme.md)
+- [Anterior](/curso.dev/dias/dia${+day - 1}.md) - [Próximo](/curso.dev/dias/dia${+day + 1}.md) - [Sumário](../readme.md)
 `,
     'utf-8'
   )
