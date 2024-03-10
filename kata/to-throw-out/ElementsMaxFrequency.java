@@ -5,45 +5,31 @@ public class ElementsMaxFrequency {
     }
 
     public static int maxFrequency(int[] nums) {
-       if (nums.length == 1) {
-            return 1;
-        }
+       Map<Integer, Integer> maxFrequencies = new HashMap<>();
+		
+		for (int num: nums) {
+		    maxFrequencies.put(num, 0);
+		}
+		
+	    for (int num: nums) {
+	        maxFrequencies.computeIfPresent(num, (k, v) -> v += 1);
+	    }
 
-        ArrayList<Integer> maxFrequencies = new ArrayList<Integer>();
+        var maxFreqValues = maxFrequencies.values();
+	    
+	    int frequenciesMaxValue = Collections.max(maxFreqValues);
+	
+	    int sumMaxFrequencies = 0;
+	    
+	     for (int num: maxFreqValues) {
+	        if (num == frequenciesMaxValue) {
+	            sumMaxFrequencies += frequenciesMaxValue;
+	        }
+	    }
+	    
+	    
+	    System.out.println(sumMaxFrequencies);
 
-        for (int i = 0; i < nums.length; i++) {
-            int count = 1;
-
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[i] == nums[j] && i != j) {
-                    nums[i] = -1;
-                    count++;
-                }
-            }
-
-            maxFrequencies.add(count);
-        }
-
-        int max = Collections.max(maxFrequencies);
-
-        if (max == 1) {
-            return nums.length;
-        }
-
-        maxFrequencies.forEach(e -> System.out.println(e));
-        
-        int maxQtde = 0;
-        for (int k = 0; k < maxFrequencies.size(); k++) {
-            
-            if (maxFrequencies.get(k) == max) {
-                maxQtde++;
-            }
-        }
-
-        if (maxQtde != 0) {
-            max *= maxQtde;
-       }
-        System.out.println(max);
-        return max;
+        return sumMaxFrequencies;
     }
 }
