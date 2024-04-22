@@ -17,5 +17,42 @@ Ao final do vídeo o Filipe destaca a importância de como as coisas realmente f
 
 - EeE: Esses tipos de testes são os testes que de fato testam o que os clientes usam. Um teste de ponta-a-ponta como o próprio nome sugere testa as extremidades de um sistema para garantir o seu funcionamento.
 
+## Não é magia! (é Protocolo)
+
+> 🤔 Como um mesmo IP pode servir vários sites diferentes?
+> De onde o servidor tira a informação de que ora acessa o site A e que ora acessa o site B?
+
+### R: quem diz para onde ser redirecionado é o client no header da requisição:
+
+```bash
+curl https://76.76.21.21 --insecure --verbose
+```
+
+```mermaid
+sequenceDiagram
+    participant Cliente
+    participant Servidor
+
+    Cliente->>Servidor: Tentativa de conexão em 76.76.21.21:443
+    Note right of Servidor: Conexão estabelecida no porto 443 (HTTPS)
+
+    Cliente->>Servidor: Início do handshake TLS
+    Servidor->>Cliente: Resposta do handshake TLS
+    Note over Cliente, Servidor: TLSv1.3 / CHACHA20-POLY1305-SHA256 estabelecido
+
+    Cliente->>Servidor: Envio de cabeçalhos HTTP/2
+    Note right of Cliente: GET / HTTP/2, Host: 76.76.21.21, User-Agent: curl/8.4.0
+
+    Servidor->>Cliente: Resposta HTTP/2 308 Redirecionamento
+    Note over Servidor,Cliente: Servidor redireciona para novo URL
+
+    Cliente->>Cliente: Processa redirecionamento
+    Note left of Cliente: Cliente segue o URL de redirecionamento
+
+    Cliente->>Servidor: Requisição para novo URL
+    Servidor->>Cliente: Carrega conteúdo do novo URL
+    Note right of Servidor: A conexão com o host original é mantida intacta
+```
+
 ---
 - [Anterior](/curso.dev/dias/dia15.md) - [Próximo](/curso.dev/dias/dia17.md) - [Sumário](../readme.md)
