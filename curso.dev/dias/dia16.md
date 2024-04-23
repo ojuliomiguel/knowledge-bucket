@@ -54,5 +54,15 @@ sequenceDiagram
     Note right of Servidor: A conexão com o host original é mantida intacta
 ```
 
+## Versionamento de API 
+
+A última aula do dia 16 foi reservada para explicar as estrategias de versionamento de APIs:
+
+* URI Path Versioning: /api/v1 
+* Header Versioning: X-API-VERSION
+
+Versionar APIs permite-nos garantir compatibilidade sem adicionar breaking changes que podem 
+impactar os clientes que utilizam a API.
+
 ---
 - [Anterior](/curso.dev/dias/dia15.md) - [Próximo](/curso.dev/dias/dia17.md) - [Sumário](../readme.md)
