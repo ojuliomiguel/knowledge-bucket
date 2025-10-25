@@ -1,3 +1,5 @@
+import static java.lang.println;
+
 void main() {
     String[] words = {"apple", "banana", "cherry"};
     String[] more = {"date", "elderberry"};
@@ -7,5 +9,6 @@ void main() {
     for (String w: words) setence.add(w);
     for (String m: more) setence.add(m);
 
-    IO.println(setence);
+    println(setence);
 }
+
