@@ -10,7 +10,8 @@ boolean isUnique(String str) {
     for (int i = 0; i < str.length(); i++) {
         char characterToVerify = str.charAt(i);
         for (char c : chars) {
-            boolean isSameCharacter = characterToVerify == c && str.indexOf(characterToVerify) != str.lastIndexOf(characterToVerify);
+            boolean isSameCharacter = characterToVerify == c
+                    && str.indexOf(characterToVerify) != str.lastIndexOf(characterToVerify);
             if (isSameCharacter) {
                 return false;
             }
@@ -27,7 +28,6 @@ boolean isUniqueWithoutDS(String str) {
                 return false;
             }
         }
-
     }
     return true;
 }
