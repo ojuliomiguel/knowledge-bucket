@@ -1,4 +1,4 @@
-import static java.lang.println;
+import static java.lang.IO.println;
 
 void main() {
     String[] words = {"apple", "banana", "cherry"};
