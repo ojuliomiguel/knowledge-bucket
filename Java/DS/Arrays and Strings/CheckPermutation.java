@@ -1,7 +1,7 @@
 import static java.lang.IO.println;
 
 void main() {
-    println(isPermutable("foo", "oof"));
+    println(isPermutable("aab", "aba"));
 }
 
 boolean isPermutable(String strOne, String strTwo) {
@@ -10,15 +10,12 @@ boolean isPermutable(String strOne, String strTwo) {
     }
 
     char[] charactersStrOne = strOne.toCharArray();
-    char[] charactersStrTwo = strOne.toCharArray();
+    Arrays.sort(charactersStrOne);
+    char[] charactersStrTwo = strTwo.toCharArray();
+    Arrays.sort(charactersStrTwo);
 
-    Set<Character> contains = new HashSet<>();
-    for (char c: charactersStrOne) {
-        contains.add(c);
-    }
-
-    for (char c: charactersStrTwo) {
-        if(contains.add(c)) {
+    for (int i = 0; i < charactersStrOne.length; i++) {
+        if (charactersStrOne[i] != charactersStrTwo[i]) {
             return false;
         }
     }
