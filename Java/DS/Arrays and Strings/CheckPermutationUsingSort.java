@@ -11,13 +11,11 @@ boolean isPermutable(String strOne, String strTwo) {
         return false;
     }
 
-    char[] charsStrOne = strOne.toCharArray();
-    Arrays.sort(charsStrOne);
-    String sortedStrOne = new String(charsStrOne);
+    return sort(strOne).equals(sort(strTwo));
+}
 
-    char[] charsStrTwo = strTwo.toCharArray();
-    Arrays.sort(charsStrTwo);
-    String sortedStrTwo = new String(charsStrTwo);
-
-    return sortedStrOne.equals(sortedStrTwo);
+String sort(String str) {
+    char[] chars = str.toCharArray();
+    Arrays.sort(chars);
+    return new String(chars);
 }
