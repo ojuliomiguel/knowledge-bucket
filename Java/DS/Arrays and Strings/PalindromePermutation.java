@@ -13,6 +13,8 @@ void main() {
     println(isAPalindromePermutation("abc")); // false
 }
 
+//TIP: A string can be rearranged into a palindrome if at most one character has an odd count
+
 boolean isAPalindromePermutation(String str) {
     Set<Integer> odds = new HashSet<>();
     str.codePoints()
