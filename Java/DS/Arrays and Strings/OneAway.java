@@ -8,19 +8,17 @@ void main() {
 }
 
 boolean isOneAway(String strOne, String strTwo) {
-    boolean isOneAwayEdited = false;
+    int counter = 0;
     if (strOne.equals(strTwo)) {
         return true;
     }
-    if (strOne.length()  - strTwo.length() <= 1 ) {
+    if (strOne.length() == strTwo.length() ) {
         for (int i = 0; i < strTwo.length(); i++) {
             if (strOne.charAt(i) != strTwo.charAt(i)) {
-                isOneAwayEdited = true;
-            } else {
-                isOneAwayEdited = false;
+                counter++;
             }
         }
 
     }
-    return isOneAwayEdited;
+    return counter <= 1;
 }
