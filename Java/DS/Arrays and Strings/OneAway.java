@@ -9,22 +9,7 @@ void main() {
 }
 
 boolean isOneAway(String strOne, String strTwo) {
-    if (strOne.equals(strTwo)) {
-        return true;
-    }
-    HashMap<Character, Integer> charMap = new HashMap<>();
 
-    for (int i = 0; i < strOne.length(); i++) {
-        charMap.put(strOne.charAt(i), i);
-    }
-
-    for (int i = 0; i < strTwo.length(); i++) {
-        if (!charMap.containsKey(strTwo.charAt(i))) {
-            Integer idx = charMap.get(strTwo.charAt(i));
-
-        }
-
-    }
 }
 
 boolean oneEditInsert(String strOne, String strTwo) {
