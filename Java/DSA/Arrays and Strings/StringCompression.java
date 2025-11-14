@@ -2,6 +2,7 @@ import static java.lang.IO.println;
 
 void main() {
     println(compression("aabcccccaaa"));
+    println(compression("abcccccaaa"));
 }
 
 String compression(String str) {
