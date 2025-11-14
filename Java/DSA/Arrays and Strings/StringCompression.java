@@ -5,19 +5,15 @@ void main() {
 }
 
 String compression(String str) {
-    char[] strChars = str.toCharArray();
-    Arrays.sort(strChars);
-    Map<Character, Integer> strCharsFrequenceMap = new HashMap<Character, Integer>();
-
+    StringBuilder compressed = new StringBuilder();
+    int countConsecutive = 0;
     for (int i = 0; i < str.length(); i++) {
-        strCharsFrequenceMap.merge(strChars[i], 1, Integer::sum);
+        countConsecutive++;
+        if (i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+            compressed.append(str.charAt(i));
+            compressed.append(countConsecutive);
+            countConsecutive = 0;
+        }
     }
-
-    StringBuilder compressionStrBuilder = new StringBuilder();
-    strCharsFrequenceMap.forEach((ch, count) -> {
-        compressionStrBuilder.append(ch.toString());
-        compressionStrBuilder.append(count.toString());
-    });
-
-    return compressionStrBuilder.toString();
+    return compressed.length() < str.length() ? compressed.toString() : str;
 }
