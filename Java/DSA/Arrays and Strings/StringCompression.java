@@ -6,6 +6,9 @@ void main() {
 }
 
 String compression(String str) {
+    if (str == null || str.isEmpty()) {
+        return str;
+    }
     StringBuilder compressed = new StringBuilder();
     int countConsecutive = 0;
     for (int i = 0; i < str.length(); i++) {
