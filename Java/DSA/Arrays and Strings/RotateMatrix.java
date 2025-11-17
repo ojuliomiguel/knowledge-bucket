@@ -4,6 +4,12 @@ void main() {
 
 }
 
+int[][] visualMatrixExampel = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+};
+
 int[][] rotateClockwise(int[][] matrix) {
     int matrixLength = matrix.length;
     for (int i = 0; i < matrixLength; i++) {
