@@ -8,15 +8,7 @@ void main() {
             {7, 8, 9}
     };
 
-    int[][] matrix = rotateClockwise(matrixToRotate);
-
-    for (int i = 0; i < matrix.length; i++) {
-        for (int j = 0; j < matrix[i].length; j++) {
-            print(matrix[i][j] + " ");
-        }
-        println();
-    }
-
+    printMatrix(rotateClockwise(matrixToRotate));
 }
 
 int[][] rotateClockwise(int[][] matrix) {
@@ -43,4 +35,13 @@ int[][] rotateClockwise(int[][] matrix) {
     }
 
     return matrix;
+}
+
+void printMatrix(int[][] matrix) {
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[i].length; j++) {
+            print(matrix[i][j] + " ");
+        }
+        println();
+    }
 }
