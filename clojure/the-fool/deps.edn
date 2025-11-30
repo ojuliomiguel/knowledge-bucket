@@ -1,5 +1,5 @@
 ;; deps.edn
 {:paths ["src"]
- :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
+ :deps {org.clojure/clojure {:mvn/version "1.12.3"}}
  :aliases
  {:run {:main-opts ["-m" "hello-world"]}}}
