@@ -1,5 +1,7 @@
 (ns core)
 
-(dfn greet [name]
-    (str "Hello, world, " name ". Clojure")
-)
+(defn greet [name]
+    (str "Hello, world, " name))
+
+(defn -main []
+  (println (greet "twat")))
