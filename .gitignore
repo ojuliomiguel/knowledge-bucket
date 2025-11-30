@@ -1,2 +1,20 @@
 dist/
 node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Clojure
+.clj-kondo/
+.lsp/
+.cpcache/
+
+# Java
+*.class
+out/
+
+# Locks (optional)
+package-lock.json
+yarn.lock
