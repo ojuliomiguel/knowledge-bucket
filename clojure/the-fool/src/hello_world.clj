@@ -4,4 +4,4 @@
   (str "Hello, World, " name))
 
 (defn -main []
-     (println (greet "Twats")))
+     (println (map greet ["Aliche", "Bobs", "Carlos"])))
