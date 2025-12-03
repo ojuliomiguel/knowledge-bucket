@@ -4,4 +4,4 @@
   (str "Hello, World, " name))
 
 (defn -main []
-     (println (map greet ["Aliche", "Bobs", "Carlos"])))
+     (println (clojure.string/join "\n" (map greet ["Aliche", "Bobs", "Carlos"]))))
