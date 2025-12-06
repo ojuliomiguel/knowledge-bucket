@@ -3,4 +3,7 @@
         (< age 12) "child"
         (< age 18) "teen"
         (< age 60) "adult"
-        : else "old"))
+        :else "old"))
+
+(println (age_classify 17))
+(println (age_classify 18))
