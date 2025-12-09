@@ -1,6 +1,6 @@
 (ns counting)
 
-(defn count_numbers [numbers]
+(defn count-numbers [numbers]
     (count numbers))
 
 (defn count-evens [numbers]
