@@ -1,6 +1,6 @@
 # Knowledge Bucket
 
-<img src="https://i.ibb.co/42vfMqF/knowledge-bucket.png" width="700">
+<img src="assets/header.jpeg" width="100%">
 
 This repository contains some notes and codes of my journey learning. 
 Feel free to explore it.
@@ -16,6 +16,7 @@ ps: Most of theoretical content is in portuguese. I will update to english soon
 * 6 - [Algorithms](Algoritmos/) :file_folder:
 * 7 - [Data Structure](DataStructure/) :file_folder:
 * 8 - [Studies Notes](curso.dev/) :file_folder:
+* 9 - [System Design](SystemDesign) :file_folder:
 
 
 ### You can find me at: 
