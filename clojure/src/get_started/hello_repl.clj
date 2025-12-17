@@ -459,7 +459,7 @@
 ;; Learn much more about Calva at https://calva.io
 
 ;; This string is the last expression in this file
-"hello_repl.clj is loaded, and ready with some things for you to try."
+"Consegui executar esta coisa no meu vscode "
 ;; It is what you'll see printed in the Output
 ;; window when you load the file.
 
