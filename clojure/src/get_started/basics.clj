@@ -1,3 +1,7 @@
+(defn say [x]
+  (println x)
+  (flush))
+
 ; Top-level vars 
 
 (def lula-fingers 9)
@@ -10,6 +14,4 @@
 ; invoking:
 (def ten (add 5 5))
 
-(do
-  (println ten)
-  (flush))
+(say (add 5 5)) ; the flush uses is because calva behavior
