@@ -18,7 +18,9 @@
 
 ; functions orders matters:
 
-(def seven (new-add 3 4))
+
+; comment is used to prevent evaluation of everything between (comment ...)
+(comment def seven (new-add 3 4))
 
 (defn new-add [a b]
   (+ a b))
