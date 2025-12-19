@@ -15,3 +15,10 @@
 (def ten (add 5 5))
 
 (say (add 5 5)) ; the flush uses is because calva behavior
+
+; functions orders matters:
+
+(def seven (new-add 3 4))
+
+(defn new-add [a b]
+  (+ a b))
