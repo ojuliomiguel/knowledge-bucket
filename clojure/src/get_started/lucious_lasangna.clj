@@ -8,5 +8,3 @@
 (defn prep-time [time]
   (* time 2))
 
-(println (prep-time 3)
-         (flush))
