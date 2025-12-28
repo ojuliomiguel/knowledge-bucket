@@ -7,7 +7,7 @@
 
 (can-fast-attack? knight-awake?)
 
-(knight-awake? false)
+(def knight-awake? false)
 (def archer-awake? true)
 (def prisoner-awake? false)
 
@@ -16,8 +16,12 @@
 
 (can-spy? knight-awake? archer-awake? prisoner-awake?)
 
-(archer-awake? false)
-(prisoner-awake? true)
+(def archer-awake? false)
+(def prisoner-awake? true)
 
+(defn can-signal-prisoner? [archer-awake? prisoner-awake?] 
+  (and (not archer-awake?) prisoner-awake?))
+
+(can-signal-prisoner? archer-awake? prisoner-awake?)
 
 
