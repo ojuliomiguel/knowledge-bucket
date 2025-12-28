@@ -16,6 +16,7 @@
 
 (can-spy? knight-awake? archer-awake? prisoner-awake?)
 
+;; It's necessary redefine "vars"
 (def archer-awake? false)
 (def prisoner-awake? true)
 
