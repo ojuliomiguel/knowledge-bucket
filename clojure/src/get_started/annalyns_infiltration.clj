@@ -25,4 +25,12 @@
 
 (can-signal-prisoner? archer-awake? prisoner-awake?)
 
+(def knight-awake? false)
+(def archer-awake? true)
+(def prisoner-awake? false)
+(def dog-present? false)
 
+(defn can-free-prisoner? [knight-awake? archer-awake? prisoner-awake? dog-present?] 
+  (and knight-awake? archer-awake? prisoner-awake? dog-present?))
+
+(can-free-prisoner? knight-awake? archer-awake? prisoner-awake? dog-present?)
