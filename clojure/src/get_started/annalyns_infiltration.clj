@@ -30,7 +30,8 @@
 (def prisoner-awake? false)
 (def dog-present? false)
 
-(defn can-free-prisoner? [knight-awake? archer-awake? prisoner-awake? dog-present?] 
-  (and knight-awake? archer-awake? prisoner-awake? dog-present?))
+(defn can-free-prisoner? [knight-awake? archer-awake? prisoner-awake? dog-present?]
+  (or (and knight-awake? (not archer-awake?) (not prisoner-awake?)) dog-present?))
+
 
 (can-free-prisoner? knight-awake? archer-awake? prisoner-awake? dog-present?)
