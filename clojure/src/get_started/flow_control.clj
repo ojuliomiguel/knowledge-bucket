@@ -9,3 +9,5 @@
 (cond (= x 5) "When x equals 5"
       (> x 7) "When x is greater than 7"
       :else "None of cases")
+
+(if (Object.) :truthy :falsey) ; objects are true
