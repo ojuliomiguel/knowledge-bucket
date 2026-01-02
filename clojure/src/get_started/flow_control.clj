@@ -11,3 +11,4 @@
       :else "None of cases")
 
 (if (Object.) :truthy :falsey) ; objects are true
+(if 0 :truthy :falsey) ; zero is true
