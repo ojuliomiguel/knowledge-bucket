@@ -20,3 +20,8 @@
       true)
   (do (println "odd")
       false))
+
+; when is an if with only then. If the condition is false, nil is returned.
+
+(when (neg? x)
+  (throw (RuntimeException. (str "x must be positive: " x))))
