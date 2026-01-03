@@ -12,3 +12,11 @@
 
 (if (Object.) :truthy :falsey) ; objects are true
 (if 0 :truthy :falsey) ; zero is true
+
+; if and do
+
+(if (even? 5)
+  (do (println "even")
+      true)
+  (do (println "odd")
+      false))
