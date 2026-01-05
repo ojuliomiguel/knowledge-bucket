@@ -9,5 +9,7 @@
     (and (>= speed 9) (<= speed 10)) (* speed 221 0.77)))
 
 (defn working-items
-  "Calculates how many working cars are produced per minute"
-  [speed])
+  [speed]
+  (cond
+    (and (>= speed 5) (<= speed 8) (int (* speed 221 0.9)))
+    ))
