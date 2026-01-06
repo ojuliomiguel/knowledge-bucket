@@ -1,17 +1,17 @@
 (ns get-started.cars-assemble)
 
-(defn production-rate [speed]
+(def base-production-rate 221)
+
+(defn success-rate [speed]
   (cond
-    (== speed 0)                    0.0
-    (and (>= speed 1) (<= speed 4)) (double (* speed 221))
-    (and (>= speed 5) (<= speed 8)) (* speed 221 0.9)
-    (== speed 9) (* speed 221 0.8)
-    (== speed 10) (* speed 221 0.77)))
+    (== speed 0) 0.0
+    (<= speed 4) 1.
+    (<= speed 8) 0.9
+    (== speed 9) 0.8
+    (== speed 10) 0.77))
+
+(defn production-rate [speed]
+  (double (* speed base-production-rate (success-rate speed))))
 
 (defn working-items [speed]
-  (cond
-    (== speed 0) 0
-    (and (>= speed 1) (<= speed 4)) (int (/ (* speed 221) 60))
-    (and (>= speed 5) (<= speed 8)) (int (/ (* speed 221 0.9) 60))
-    (== speed 9) (int (/ (* speed 221 0.8) 60))
-    (== speed 10) (int (/ (* speed 221 0.77) 60))))
+  (int (/ (production-rate speed) 60)))
