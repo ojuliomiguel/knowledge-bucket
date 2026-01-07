@@ -12,6 +12,12 @@
 (defn success-rate [speed]
   (:rate (first (filter #(<= speed (:max-speed %)) success-rates))))
 
+(defn _success-rate [speed]
+  (->> success-rates
+       (filter #(<= speed (:max-speed %)))
+       first
+       :rate))
+
 (defn production-rate [speed]
   (double (* speed base-production-rate (success-rate speed))))
 
