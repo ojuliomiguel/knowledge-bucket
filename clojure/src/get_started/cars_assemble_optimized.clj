@@ -10,7 +10,10 @@
    {:max-speed 10 :rate 0.77}])
 
 (defn success-rate [speed]
-  (:rate (first (filter #(<= speed (:max-speed %)) success-rates))))
+  (:rate 
+   (first 
+    (filter #(<= speed (:max-speed %)) 
+            success-rates))))
 
 (defn _success-rate [speed]
   (->> success-rates
