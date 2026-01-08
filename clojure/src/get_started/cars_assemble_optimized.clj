@@ -15,6 +15,10 @@
     (filter #(<= speed (:max-speed %)) 
             success-rates))))
 
+;keyword as a function:
+
+(:max-speed {:max-speed 8 :rate 0.9}) ;; => 8
+
 (defn _success-rate [speed]
   (->> success-rates
        (filter #(<= speed (:max-speed %)))
