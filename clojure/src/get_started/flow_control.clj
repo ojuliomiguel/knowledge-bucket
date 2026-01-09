@@ -25,3 +25,11 @@
 
 (when (neg? x)
   (throw (RuntimeException. (str "x must be positive: " x))))
+
+; cond and else
+
+(let [x 11]
+  (cond
+    (< x 2) "x is less than 2"
+    (< x 10) "x is less than 10"
+    :else "x is greater than or equal to 10"))
