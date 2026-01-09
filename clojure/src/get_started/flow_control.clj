@@ -26,8 +26,13 @@
 (when (neg? x)
   (throw (RuntimeException. (str "x must be positive: " x))))
 
-; cond and else
+; vector biding:
+(let [x 11
+      y 20
+      name "Cluzure"]
+  (println (+ x y))) ; => 31
 
+; cond and else
 (let [x 11]
   (cond
     (< x 2) "x is less than 2"
