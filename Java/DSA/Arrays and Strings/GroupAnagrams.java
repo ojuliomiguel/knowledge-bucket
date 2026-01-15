@@ -4,22 +4,20 @@ import java.util.ArrayList;
 
 void main() {
     String[] strs = { "act", "pots", "tops", "cat", "stop", "hat" };
-    groupAnagrams(strs);
+    gatherAnagrams(strs);
 }
 
-List<List<String>> groupAnagrams(String[] strs) {
-    Map<String, List<String>> map = new HashMap<String, List<String>>();
-    Arrays.stream(strs)
-            .forEach(str -> {
-                char[] charStr = str.toCharArray();
-                Arrays.sort(charStr);
-                String key = new String(charStr);
-
-                if (!map.containsKey(key)) {
-                    map.put(key, new ArrayList<>());
-                }
-
-                map.get(key).add(str);
-            });
-    return new ArrayList<>(map.values());
+List<List<String>> gatherAnagrams(String[] anagrams) {
+    var groupedAnagrams = new HashMap<String, List<String>>();
+    Arrays.stream(anagrams)
+        .forEach(anagram -> {
+            char[] anagramChars = anagram.toCharArray();
+            Arrays.sort(anagramChars);
+            String key = new String(anagramChars);
+            if (!groupedAnagrams.containsKey(key)) {
+                groupedAnagrams.put(key, new ArrayList<>());
+            }
+            groupedAnagrams.get(key).add(anagram);
+        });
+    return new ArrayList<>(groupedAnagrams.values());
 }
