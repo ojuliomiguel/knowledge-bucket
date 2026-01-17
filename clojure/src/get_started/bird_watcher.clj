@@ -6,4 +6,9 @@
   (get birds
        (- (count birds) 1)))
 
+(defn inc-bird [birds]
+  (conj birds
+        (+ (peek birds) 1)))
+
+
 (println (today last-week))
