@@ -2,13 +2,17 @@
 
 (def last-week [0 2 5 3 7 8 4])
 
+(defn last-index [arr]
+  (- (count arr) 1))
+
 (defn today [birds]
   (get birds
-       (- (count birds) 1)))
+       (last-index birds)))
 
 (defn inc-bird [birds]
-  (conj birds
-        (+ (peek birds) 1)))
+  (assoc
+   birds (last-index birds)
+   (+ (peek birds) 1)))
 
 
 (println (today last-week))
