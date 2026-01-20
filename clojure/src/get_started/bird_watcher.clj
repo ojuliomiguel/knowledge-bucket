@@ -14,5 +14,7 @@
    birds (last-index birds)
    (+ (peek birds) 1)))
 
+(defn day-without-birds? [birds]
+  (every? #(> % 0) birds))
 
 (println (today last-week))
