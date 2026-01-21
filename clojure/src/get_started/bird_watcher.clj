@@ -15,6 +15,9 @@
    (+ (peek birds) 1)))
 
 (defn day-without-birds? [birds]
-  (every? #(> % 0) birds))
+  (not (every? #(> % 0) birds)))
+
+(defn day-zero-birds? [birdz]
+  (boolean (some zero? birdz)))
 
 (println (today last-week))
