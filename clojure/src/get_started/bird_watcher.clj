@@ -20,4 +20,7 @@
 (defn day-zero-birds? [birdz]
   (boolean (some zero? birdz)))
 
+(defn n-days-count [birds n]
+  (reduce + (take n birds)))
+
 (println (today last-week))
