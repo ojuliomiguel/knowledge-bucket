@@ -23,4 +23,5 @@
 (defn n-days-count [birds n]
   (reduce + (take n birds)))
 
-(println (today last-week))
+(defn busy-days [birds]
+  (filter #(>= % 4) birds))
