@@ -24,4 +24,5 @@
   (reduce + (take n birds)))
 
 (defn busy-days [birds]
-  (filter #(>= % 4) birds))
+  (count (filter
+          #(>= % 5) birds)))
