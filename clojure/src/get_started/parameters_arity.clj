@@ -28,3 +28,15 @@
 (weird-arity 1)
 
 (x-console "PS1")
+
+; variable-arity functions
+
+(defn codger-communication
+  [whippersnapper]
+  (str "Get off my lawn, " whippersnapper "!!!"))
+
+(defn codger
+  [& whippersnappers]
+  (map codger-communication whippersnappers))
+
+(codger "Jelly" "Alfred" "Karl Murcho")
