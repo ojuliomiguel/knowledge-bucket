@@ -13,16 +13,18 @@
 
 
 (defn x-console
-  [name console-type]
-  (str "Selected console " name console-type)
-  [name]
-  (x-console name "Playstation"))
+  ([name console-type]
+   (str "Selected console " name console-type))
+  ([name]
+   (x-console name " Playstation")))
 
 (defn weird-arity
-  ([] 
+  ([]
    "Let the body hit the floor")
   ([number]
    (inc number)))
 
 (weird-arity)
 (weird-arity 1)
+
+(x-console "PS1")
