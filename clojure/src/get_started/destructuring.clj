@@ -23,3 +23,8 @@
   (println (str "Treasure lgn:" lgn)))
 
 (announce-treasure-location {:lat 20.33 :lgn 33.21})
+
+(defn announce-treasure-location
+  [{:keys [lat lgn]}]
+  (println (str "Treasure lat: " lat))
+  (println (str "Treasure lgn:" lgn)))
