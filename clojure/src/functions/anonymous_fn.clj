@@ -16,3 +16,11 @@
 ; special way to declare
 
 (#(* 3 %) 3)
+
+(map #(str "Hi " %) ["Mario" "Luigi"])
+
+(#(str %1 " and " %2) "Coconut" "Massagem")
+
+;Using rest parameter
+
+(#(identity %&) 1 "Blong" :up)
