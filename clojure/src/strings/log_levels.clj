@@ -5,5 +5,4 @@
   "Takes a string representing a log line
    and returns its message with whitespace trimmed."
   [s]
-
-  (str/split s #" " 2))
+  (let [[_ level message] (re-find #"\[(*.?\)]\s*(.*)")] s))
