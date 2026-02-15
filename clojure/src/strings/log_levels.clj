@@ -17,3 +17,13 @@
         (re-find #"\[([A-Z]+)\s*(.*)]" s)] (str/lower-case level)))
 
 (println (message "[ERROR]: Unexpected token"))
+
+(defn reformat
+  "Takes a string representing a log line and formats it
+   with the message first and the log level in parentheses."
+  [s]
+  (let [[_ level message]
+        (re-find #"\[([A-Z]+)\]:\s*(.*)" s)]
+    (str message " (" (str/lower-case level) " )")))
+
+(println (reformat "[INFO]: Operation completed"))
