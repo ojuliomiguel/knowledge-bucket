@@ -24,6 +24,6 @@
   [s]
   (let [[_ level message]
         (re-find #"\[([A-Z]+)\]:\s*(.*)" s)]
-    (str message " (" (str/lower-case level) " )")))
+    (str/trim (str message " (" (str/lower-case level) ")"))))
 
 (println (reformat "[INFO]: Operation completed"))
