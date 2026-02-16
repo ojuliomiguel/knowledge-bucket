@@ -25,7 +25,8 @@
   (let [[_ level message]
         (re-find #"\[([A-Z]+)\]:\s*(.*)" s)
         clean-message (-> message
-                          (str/replace #"\r?\n\s*" ""))]
+                          (str/replace #"\s+" " ")
+                          str/trim)]
     (str clean-message " (" (str/lower-case level) ")")))
 
 (println (reformat "[WARNING]:  Disk almost full\r\n"))
