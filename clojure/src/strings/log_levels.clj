@@ -23,7 +23,9 @@
    with the message first and the log level in parentheses."
   [s]
   (let [[_ level message]
-        (re-find #"\[([A-Z]+)\]:\s*(.*)" s)]
-    (str/trim (str message " (" (str/lower-case level) ")"))))
+        (re-find #"\[([A-Z]+)\]:\s*(.*)" s)
+        clean-message (-> message
+                          (str/replace #"\r?\n\s*" ""))]
+    (str clean-message " (" (str/lower-case level) ")")))
 
-(println (reformat "[INFO]: Operation completed"))
+(println (reformat "[WARNING]:  Disk almost full\r\n"))
