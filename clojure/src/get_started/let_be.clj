@@ -9,3 +9,12 @@
         tax-amt (* discounted tax-rate)
         total (+ discounted tax-amt)]
     (str "Final Price: $ " total " (Discount: $" discount-amt ")")))
+
+; Let introduces a new scope
+
+(def x 0)
+;; (let [x 1] x)
+(let [x (inc x)] x)
+
+
+
