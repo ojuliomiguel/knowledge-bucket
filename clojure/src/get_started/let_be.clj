@@ -16,5 +16,10 @@
 ;; (let [x 1] x)
 (let [x (inc x)] x)
 
+; Using Rest parameters in let
 
+(def dalmatians-list ["Pongo" "Perdita" "Puppy 1"  "Puppy 2"])
 
+(let [[pongo & dalmatians] dalmatians-list]
+  [pongo dalmatians])
+                                           
