@@ -2,11 +2,11 @@
 
 (def fahrenheit_constant 32)
 (def kelvin_constant 273.15)
+(def fahrenheit_multiply 1.8)
 
 (defn celsius_to_fahrenheit
   [temperature]
-  (let [fahrenheit_multiply 1.8]
-    (float (+ (* temperature fahrenheit_multiply) fahrenheit_constant))))
+  (float (+ (* temperature fahrenheit_multiply) fahrenheit_constant)))
 
 println (celsius_to_fahrenheit 0)
 
