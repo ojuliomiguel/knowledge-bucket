@@ -1,8 +1,8 @@
 (ns exercises.keywords-as-function)
 
-; (fn [p] (get p :name))
+; We can use keyword as a function like: (fn [p] (get p :name))
 
-(def peoples [{:name "Ana" :age 32} {:name "Julia" :age 22}])
+(def peoples [{:name "Ana :age 27"} {:name "Júlia" :age 22}])
 
 (map :name peoples)
 
