@@ -6,11 +6,12 @@
     (println "Goodbye")
     (recur (inc iteration))))
 
+; Multiple arity
 (defn recursive-printer
   ([]
    (recursive-printer 0))
   ([iteration]
    (println iteration)
    (if (> iteration 3)
-     (println "Goodbye")
+     (println "Goodbye!")
      (recursive-printer (inc iteration)))))
