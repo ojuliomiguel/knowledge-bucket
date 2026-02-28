@@ -1,8 +1,10 @@
-(ns functions.matching-part)
+(ns functions.matching-part
+  (:require [clojure.string :as str]))
+
 
 (defn matching-part
   [part]
-  {:name (clojure.string/replace (:name part) #"ˆleft-" "right-")
+  {:name (str/replace (:name part) #"ˆleft-" "right-")
    :size (:size part)})
 
 (defn symmetrize-body-parts
@@ -15,3 +17,9 @@
         (recur remaining
                (into final-body-parts
                      (set [part (matching-part part)])))))))
+
+(re-find #"^left-" "left-eye")
+(re-find #"^left" "cleft-chin")
+(re-find #"ˆleft" "water melon")
+
+(matching-part {:name "left-eye" :size 1})
