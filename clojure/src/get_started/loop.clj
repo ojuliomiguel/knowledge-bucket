@@ -15,3 +15,5 @@
    (if (> iteration 3)
      (println "Goodbye!")
      (recursive-printer (inc iteration)))))
+
+(recursive-printer)
