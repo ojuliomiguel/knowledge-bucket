@@ -23,3 +23,6 @@
 (re-find #"ˆleft" "water melon")
 
 (matching-part {:name "left-eye" :size 1})
+
+(reduce + [1 2 3 4])
+(+ (+ (+ 1 2) 3) 4)
