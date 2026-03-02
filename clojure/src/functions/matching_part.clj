@@ -7,6 +7,8 @@
   {:name (str/replace (:name part) #"ˆleft-" "right-")
    :size (:size part)})
 
+; An important info: in loop for we bind values like let
+
 (defn symmetrize-body-parts
   [asym-body-parts]
   (loop [remaing-asym-parts asym-body-parts
