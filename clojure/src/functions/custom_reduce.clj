@@ -1,11 +1,12 @@
 (ns functions.custom-reduce)
 
 (defn custom-reduce
-  ([func initial coll]
+  ([fn initial coll]
    (loop [result initial
-          remaining coll]
+          remaining coll]n 
      (if (empty? remaining)
        result
-       (recur (func result (first remaining)) (rest remaining)))))
-  ([func [head & tail]]
-   (custom-reduce func head tail)))
+       (recur (fn result (first remaining)) (rest remaining)))))
+  ([fn [head & tail]]
+   (custom-reduce fn head tail)))
+
