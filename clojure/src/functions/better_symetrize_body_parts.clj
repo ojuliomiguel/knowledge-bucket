@@ -1,4 +1,5 @@
-(ns functions.better-symetrize-body-parts)
+(ns functions.better-symetrize-body-parts
+  (:require [functions.matching-part :refer [matching-part]]))
 
 (defn better-symetrize-body-parts
   [asym-body-parts]
