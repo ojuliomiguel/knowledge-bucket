@@ -3,7 +3,7 @@
 
 (defn hit
   [asym-body-parts]
-  (let [sym-parts (better-symemetrize-body-parts asym-body-parts)
+  (let [sym-parts (better-symetrize-body-parts asym-body-parts)
         body-part-size-sum (reduce + (map :size sym-parts))
         target (rand body-part-size-sum)]
     (loop [[part & remaining] sym-parts
