@@ -1,5 +1,7 @@
 (ns functions.hobbit-violence
-  (:require [functions.better-symetrize-body-parts :refer [better-symetrize-body-parts]]))
+  (:require
+   [data.asym-hobbit-body-parts :refer [asym-hobbit-body-parts]]
+   [functions.better-symetrize-body-parts :refer [better-symetrize-body-parts]]))
 
 (defn hit
   [asym-body-parts]
@@ -11,3 +13,5 @@
       (if (> accumulated-size target)
         part
         (recur remaining (+ accumulated-size (:size (first remaining))))))))
+
+(hit asym-hobbit-body-parts)
