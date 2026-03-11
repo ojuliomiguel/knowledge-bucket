@@ -2,6 +2,7 @@
 
 (defn add-100 
   [number]
-  (+ number 100))
+  (let [one_hundred 100]
+    (+ number one_hundred)))
 
 (add-100 1)
