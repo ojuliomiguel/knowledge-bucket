@@ -1,0 +1,32 @@
+(ns exercism.bird-watcher)
+
+(def last-week [0 2 5 3 7 8 4])
+
+(defn last-index [arr]
+  (- (count arr) 1))
+
+(defn today [birds]
+  (get birds
+       (last-index birds)))
+
+(defn inc-bird [birds]
+  (assoc
+   birds (last-index birds)
+   (+ (peek birds) 1)))
+
+(defn day-without-birds? [birds]
+  (not (every? #(> % 0) birds)))
+
+(defn day-zero-birds? [birds]
+  (boolean (some zero? birds)))
+
+(defn n-days-count [birds n]
+  (reduce + (take n birds)))
+
+(defn busy-days [birds]
+  (count (filter
+          #(>= % 5) birds)))
+
+(defn odd-week? [birds]
+  (every?
+   #(or (= % 1) (= % 0)) birds))
