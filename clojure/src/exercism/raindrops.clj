@@ -1,10 +1,14 @@
 (ns exercism.raindrops
   (:require [clojure.string :as str]))
 
+(defn isDivisible?
+  [num, divsor]
+  (= (mod num divsor) 0))
+
 (defn convert
   [num]
-  (clojure.string/join (filter some? [(when (= (mod num 3) 0) "Pling")
-                                      (when (= (mod num 5) 0) "Plang")
-                                      (when (= (mod num 7) 0) "Plong")])))
+  (clojure.string/join (filter some? [(when (isDivisible? num 3) "Pling")
+                                      (when (isDivisible? num 5) "Plang")
+                                      (when (isDivisible? num 7) "Plong")])))
 
-(convert 28)
+(convert 30)
