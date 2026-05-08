@@ -3,6 +3,7 @@
 (def ^:const fahrenheit-constant 32)
 (def ^:const kelvin-constant 273.15)
 (def ^:const fahrenheit-multiply 1.8)
+(def ^:const fahrenheit-divisor 5/9)
 
 (defn celsius_to_fahrenheit
   [temperature]
@@ -12,7 +13,7 @@
 
 (defn fahrenheit_to_celsius
   [temperature]
-  (float (* (- temperature fahrenheit-constant) 5/9)))
+  (float (* (- temperature fahrenheit-constant) fahrenheit-divisor)))
 
 (println (fahrenheit_to_celsius 212))
 
