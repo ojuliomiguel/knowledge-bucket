@@ -1,11 +1,13 @@
 (ns katas.week-summary)
 
-(def week 
+(def week
   {:days ["mon" "tue" "wed" "thu" "fri" "sat" "sun"]
    :birds [0 2 5 3 7 8 4]})
 
 (defn week_summary
   [{:keys [days birds]}]
-  (reduce + birds))
+  (let [total (reduce + birds),
+        busy (count (filter #(>= % 5) birds))]
+    {:total total :busy busy}))
 
 (week_summary week)
