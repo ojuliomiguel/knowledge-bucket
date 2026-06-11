@@ -6,3 +6,7 @@
   (+ x y))
 
 (def five (add 2 3))
+
+(comment 
+  (+ 10 5)
+  :rcf)

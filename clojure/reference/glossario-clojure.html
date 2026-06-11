@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossário Clojure</title>
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --accent: #588157;
+      --bg: #fffff8;
+      --rule: #ccc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 38rem;
+      margin: 2rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    h1 { font-weight: 400; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+    }
+    dt { font-weight: 600; margin-top: 1.25rem; }
+    dd { margin: 0.25rem 0 0 0; }
+    .avoid { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
+    code {
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 0.88em;
+      background: #f4f4f0;
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+    }
+    nav { margin-bottom: 2rem; font-size: 0.95rem; }
+    nav a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <nav><a href="../lessons/0001-retomando-o-repl.html">← Lição 0001</a></nav>
+
+  <h1>Glossário Clojure</h1>
+  <p class="subtitle">Termos canônicos deste workspace de aprendizado.</p>
+
+  <h2>Fundamentos</h2>
+
+  <dl>
+    <dt>Forma (form)</dt>
+    <dd>Qualquer expressão válida em Clojure — um átomo, uma lista, um vetor, um mapa ou uma função. Tudo que você avalia no REPL é uma forma.</dd>
+    <dd class="avoid">Evitar: comando, statement, linha de código</dd>
+
+    <dt>REPL</dt>
+    <dd>Read-Eval-Print Loop: ciclo interativo que lê uma forma, avalia, imprime o resultado e espera a próxima. É o laboratório principal de Clojure.</dd>
+    <dd class="avoid">Evitar: console, terminal genérico</dd>
+
+    <dt>Avaliação</dt>
+    <dd>Processo pelo qual o runtime transforma uma forma em um valor. Listas com operador na primeira posição são chamadas como função.</dd>
+
+    <dt>Notação prefixa</dt>
+    <dd>Operador vem antes dos operandos: <code>(+ 1 2)</code> em vez de <code>1 + 2</code>. Parênteses definem a chamada, não apenas agrupam.</dd>
+
+    <dt><code>def</code></dt>
+    <dd>Cria um var nomeado no namespace atual, associando um símbolo a um valor. O valor persiste entre avaliações no REPL.</dd>
+    <dd class="avoid">Evitar: variável mutável, atribuição</dd>
+
+    <dt><code>defn</code></dt>
+    <dd>Define uma função nomeada: cria um var cujo valor é uma função. Combina <code>def</code> com a lógica de <code>fn</code>.</dd>
+
+    <dt>Valor</dt>
+    <dd>Resultado de avaliar uma forma — número, string, coleção, função, <code>nil</code>, etc. Em Clojure, valores são imutáveis.</dd>
+  </dl>
+
+  <p style="margin-top: 3rem; color: var(--muted); font-size: 0.9rem;">
+    Este glossário cresce conforme você demonstra entendimento. Termos novos entram após uso correto, não após primeira exposição.
+  </p>
+</body>
+</html>

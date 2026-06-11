@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lição 0001 — Retomando o REPL</title>
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --accent: #588157;
+      --bg: #fffff8;
+      --rule: #ddd;
+      --correct: #2d6a4f;
+      --wrong: #9b2226;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 38rem;
+      margin: 2rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    h1 { font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; }
+    .meta { color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+    }
+    p { margin: 1rem 0; }
+    code, pre {
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 0.88em;
+    }
+    pre {
+      background: #f4f4f0;
+      padding: 1rem 1.25rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      line-height: 1.45;
+      margin: 1.25rem 0;
+    }
+    .result { color: var(--muted); }
+    a { color: var(--accent); }
+    .mission {
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin: 1.5rem 0;
+      background: #f8faf8;
+    }
+    .quiz { margin: 2rem 0; }
+    .quiz fieldset { border: none; padding: 0; margin: 1rem 0; }
+    .quiz legend { font-weight: 600; margin-bottom: 0.75rem; }
+    .quiz label {
+      display: block;
+      padding: 0.5rem 0;
+      cursor: pointer;
+    }
+    .quiz input { margin-right: 0.5rem; }
+    button {
+      font-family: inherit;
+      font-size: 0.95rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    button:hover { opacity: 0.9; }
+    .feedback { margin-top: 1rem; font-weight: 600; min-height: 1.5rem; }
+    .feedback.ok { color: var(--correct); }
+    .feedback.err { color: var(--wrong); }
+    .practice {
+      background: #fffef5;
+      border: 1px solid #e8e4c9;
+      padding: 1.25rem;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Retomando o REPL</h1>
+  <p class="meta">Lição 0001 · ~10 minutos · Reativação</p>
+
+  <div class="mission">
+    <strong>Missão:</strong> voltar a ler e escrever Clojure com confiança — projeto pessoal, programação funcional, e no futuro uma API ou CLI.
+  </div>
+
+  <p>Você já escreveu Clojure neste repositório, mas passou um tempo afastado. Antes de coleções avançadas ou frameworks, precisamos reativar o hábito mais importante: <strong>avaliar formas no REPL e observar o resultado</strong>.</p>
+
+  <h2>O que é uma forma?</h2>
+  <p>Em Clojure, tudo que você digita é uma <em>forma</em> — uma expressão que o runtime pode avaliar. Números, strings, listas, vetores, mapas e funções são formas.</p>
+
+  <pre>(+ 1 2)
+<span class="result">;=&gt; 3</span></pre>
+
+  <p>Clojure usa <strong>notação prefixa</strong>: o operador vem primeiro, depois os operandos. Os parênteses não são decorativos — eles definem uma chamada de função. <code>+</code> é uma função; <code>1</code> e <code>2</code> são argumentos.</p>
+
+  <p>Compare com outras linguagens:</p>
+  <pre>;; Clojure          ;; outras linguagens
+(+ 1 2)             ; 1 + 2
+(str "olá" "!")     ; "olá" + "!"</pre>
+
+  <h2>O REPL como laboratório</h2>
+  <p>REPL significa <em>Read-Eval-Print Loop</em>. Você digita uma forma, o runtime avalia, imprime o resultado, e espera a próxima. É o ciclo de feedback mais rápido que existe em Clojure.</p>
+
+  <div class="practice">
+    <strong>Prática agora:</strong> na pasta <code>clojure/</code>, rode <code>clj</code> no terminal. Avalie cada forma abaixo, uma por uma. Antes de pressionar Enter, tente prever o resultado.
+    <pre>(+ 10 5)
+(* 3 4)
+(str "Clojure" " " "2026")
+(- 100 37)</pre>
+  </div>
+
+  <h2><code>def</code> e <code>defn</code></h2>
+  <p><code>def</code> associa um nome a um valor no namespace. Não é uma variável mutável — é um var que aponta para um valor imutável.</p>
+
+  <pre>(def pi 3.14)
+pi
+<span class="result">;=&gt; 3.14</span></pre>
+
+  <p><code>defn</code> define uma função nomeada:</p>
+
+  <pre>(defn dobrar [n]
+  (* n 2))
+
+(dobrar 7)
+<span class="result">;=&gt; 14</span></pre>
+
+  <p>A forma <code>[n]</code> é a <em>vetor de parâmetros</em> — lista os nomes que a função recebe. O corpo da função é a última expressão; seu valor é o retorno (não precisa de <code>return</code>).</p>
+
+  <div class="practice">
+    <strong>Prática agora:</strong> no REPL, defina uma função <code>celsius-para-fahrenheit</code> que recebe <code>c</code> e retorna <code>(+ (* c 1.8) 32)</code>. Teste com <code>0</code> e <code>100</code>.
+  </div>
+
+  <h2>Verificação rápida</h2>
+  <p>Responda de memória antes de clicar em verificar.</p>
+
+  <div class="quiz" id="quiz1">
+    <fieldset>
+      <legend>1. O que <code>(+ 1 2)</code> devolve ao ser avaliado?</legend>
+      <label><input type="radio" name="q1" value="a"> Retorna o número três</label>
+      <label><input type="radio" name="q1" value="b"> Retorna uma função anônima</label>
+      <label><input type="radio" name="q1" value="c"> Retorna uma mensagem erro</label>
+      <label><input type="radio" name="q1" value="d"> Não retorna nada útil</label>
+    </fieldset>
+    <button onclick="checkQuiz('quiz1', {q1:'a'}, 'fb1')">Verificar</button>
+    <div class="feedback" id="fb1"></div>
+  </div>
+
+  <div class="quiz" id="quiz2">
+    <fieldset>
+      <legend>2. O que <code>(def x 5)</code> faz principalmente?</legend>
+      <label><input type="radio" name="q2" value="a"> Cria um valor nomeado</label>
+      <label><input type="radio" name="q2" value="b"> Cria uma função nova</label>
+      <label><input type="radio" name="q2" value="c"> Cria um binding local</label>
+      <label><input type="radio" name="q2" value="d"> Cria um loop interno</label>
+    </fieldset>
+    <button onclick="checkQuiz('quiz2', {q2:'a'}, 'fb2')">Verificar</button>
+    <div class="feedback" id="fb2"></div>
+  </div>
+
+  <div class="quiz" id="quiz3">
+    <fieldset>
+      <legend>3. Em <code>(defn somar [a b] (+ a b))</code>, o que é <code>[a b]</code>?</legend>
+      <label><input type="radio" name="q3" value="a"> Vetor de parâmetros</label>
+      <label><input type="radio" name="q3" value="b"> Vetor de resultados</label>
+      <label><input type="radio" name="q3" value="c"> Vetor de argumentos</label>
+      <label><input type="radio" name="q3" value="d"> Vetor de constantes</label>
+    </fieldset>
+    <button onclick="checkQuiz('quiz3', {q3:'a'}, 'fb3')">Verificar</button>
+    <div class="feedback" id="fb3"></div>
+  </div>
+
+  <h2>Fonte primária</h2>
+  <p>Para aprofundar o mesmo tema com exercícios guiados, leia o capítulo <a href="https://www.braveclojure.com/basic-types/" target="_blank" rel="noopener">Basic Types</a> e <a href="https://www.braveclojure.com/do-things/" target="_blank" rel="noopener">Do Things</a> do <em>Clojure for the Brave and True</em>.</p>
+
+  <h2>Referência</h2>
+  <p>Termos desta lição: <a href="../reference/glossario-clojure.html">Glossário Clojure</a></p>
+
+  <div class="footer">
+    <p><strong>Próximo passo:</strong> complete a prática no REPL e responda aos quizzes. Depois, me conte como foi — acertos, dúvidas, ou onde travou. Sou seu professor neste workspace; pergunte o que não ficou claro.</p>
+    <p>Lição seguinte (quando estiver pronto): coleções e <code>let</code>.</p>
+  </div>
+
+  <script>
+    function checkQuiz(quizId, answers, feedbackId) {
+      const quiz = document.getElementById(quizId);
+      const fb = document.getElementById(feedbackId);
+      let allCorrect = true;
+      for (const [name, expected] of Object.entries(answers)) {
+        const selected = quiz.querySelector(`input[name="${name}"]:checked`);
+        if (!selected || selected.value !== expected) allCorrect = false;
+      }
+      if (allCorrect) {
+        fb.textContent = "Correto! Boa recuperação.";
+        fb.className = "feedback ok";
+      } else {
+        fb.textContent = "Ainda não. Releia a seção e tente de novo.";
+        fb.className = "feedback err";
+      }
+    }
+  </script>
+</body>
+</html>
